@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+}
+<h1>@ViewData["Title"]</h1>
+<p>Use this page to chat with other pharmacists</p>
+<div class="container" style="margin: 0 auto;">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-4"><input 
+         style="  
+        float: left;
+        width: 98%;
+        margin-top: 6px;
+        height: 200px;
+        border-radius: 20px;" type="text" id="messageInput" placeholder="Write a message..." /></div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
